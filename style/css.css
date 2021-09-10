@@ -26,7 +26,16 @@ header {
 .goods-list {
   display: -ms-grid;
   display: grid;
+  place-items: center;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.goods-item {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  width: 100px;
+  background: #eeeded;
 }
 /*# sourceMappingURL=css.css.map */
