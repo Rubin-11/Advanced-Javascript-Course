@@ -1,5 +1,4 @@
-const API_URL =
-  "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses";
+const API_URL = "https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses";
 
   // Переведено на промисы
 // let getRequest = (url) => {
@@ -40,9 +39,7 @@ class GoodsList {
     const block = document.querySelector(".goods-list");
     for (let product of this.goods) {
       console.log(this.constructor.name);
-
       let obj = new GoodsItem(product);
-
       console.log(obj);
       this.goodsObjs.push(obj);
       block.insertAdjacentHTML("beforeend", obj.render());
