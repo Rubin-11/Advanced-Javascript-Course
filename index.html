@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <p>'Lorem ipsum dolor, sit amet consectetur adipisicing elit'.aren't 'Voluptatum nam cupiditate quia aspernatur expedita' debitis magni quisquam necessitatibus 'distinctio' 'earum culpa, beatae' aliquid 'provident deserunt quasi' similique ad 'illo molestiae nulla incidunt' totam, aren't delectus 'accusantium nihil!' Quibusdam 'dolorem quidem nostrum minima' ad 'quas, ut, consectetur' vero aren't ipsam 'tenetur culpa' voluptatem?</p>
+  <button>Сhange</button>
+</body>
+<script>
+  let text = document.querySelector('p');
+  let button = document.querySelector("button").addEventListener("click", () => {
+    // text.textContent = text.textContent.replace(/'/g, '"');
+    text.textContent = text.textContent.replace(/\B'|'\B/g, '"');
+  });
+</script>
+</html>
