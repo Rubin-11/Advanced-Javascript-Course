@@ -1,48 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style/css.css" />
-  </head>
-  <body>
-    <div id="app">
-      <div class="container">
-        <header class="header">
-          <div class="search">
-            <input type="text" class="goods-search" v-model="searchLine" />
-            <button class="search-button" @click="FilterGoods">Искать</button>
-          </div>
-          <button class="basket-button" @click="basketQ()">Корзина</button>
-          <div class="basket" v-bind:class="{ invisible: isActive }">
-            <h1 v-if="basket.length === 0">Нет данных</h1>
-            <div class="basket-item" v-for="basket in basket">
-              <img src="img/img.png">
-              <div>
-                <p>{{ basket.product_name }}</p>
-                <p>Количество: {{ basket.quantity }}</p>
-                <p>{{ basket.price }} за ед.</p>
-                <p>{{ basket.price * basket.quantity }} ₽</p>
-                <button class="del-basket-item" @click="removal(basket)">&times;</button>
-            </div>
-          </div>
-        </header>
-        <main>
-          <div class="goods-list center">
-            <div class="goods-item" v-for="goods in filteredGoods" :key="goods.id_producr">
-              <img src="img/img.png" width=100px>
-              <h3>{{ goods.product_name }}</h3>
-              <p>{{ goods.price }}</p>
-              <button class="buy" @click="addInBasket(goods)">Купить</button>
-            </div>
-          </div>
-        </main>
-      </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <script src="script/script.js"></script>
-    <!-- <script src="script/fast_food.js"></script> -->
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Интернет-магазин</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="app">
+    <header>
+        <div class="logo">Интернет-магазин</div>
+        <div class="cart">
+            <form-search ref="forms"></form-search>
+            <cart ref="cart"></cart>
+        </div>
+    </header>
+    <main>
+        <errors-add ref="errors-add" v-bind:class="{ errors: isActive }"></errors-add>
+        <products ref="products"></products>
+    </main>
+</div>
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="js/CartComp.js"></script>
+    <script src="js/ProducComp.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>
