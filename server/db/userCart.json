@@ -3,10 +3,18 @@
     "countGoods": 2,
     "contents": [
         {
-            "quantity": 2,
-            "id_product": 124,
-            "product_name": "Keyboard",
-            "price": 1600
+            "quantity": 1,
+            "id_product": 2,
+            "img": "img/topProduct/best__product-2.png",
+            "product_name": "Вечерний костюм",
+            "price": 4000
+        },
+        {
+            "quantity": 1,
+            "id_product": 3,
+            "img": "img/topProduct/best__product-3.png",
+            "product_name": "Летняя толстовка",
+            "price": 400
         }
     ]
 }

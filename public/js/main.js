@@ -1,9 +1,9 @@
-// const API = 'https://raw.githubusercontent.com/GeekBrainsTutorial/online-store-api/master/responses';
 
 const app = new Vue({
     el: '#app',
     data: {
         userSearch: '',
+        quantityGoodsBasket: 0
     },
     methods: {
         getJson(url){
@@ -56,5 +56,5 @@ const app = new Vue({
     mounted() {
         console.log(this);
     }
-});
+});$mount('#app')
 
