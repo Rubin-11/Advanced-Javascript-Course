@@ -34,5 +34,23 @@
     "img": "img/topProduct/best__product-6.png",
     "product_name": "Полосатая рубашка",
     "price": 500
+  },
+  {
+    "id_product": 7,
+    "img": "img/topProduct/best__product-10.png",
+    "product_name": "Белая рубашка",
+    "price": 500
+  },
+  {
+    "id_product": 8,
+    "img": "img/topProduct/best__product-11.png",
+    "product_name": "Кожаная куртка",
+    "price": 5000
+  },
+  {
+    "id_product": 9,
+    "img": "img/topProduct/best__product-12.png",
+    "product_name": "Пляжный вариант",
+    "price": 200
   }
 ]

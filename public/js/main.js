@@ -2,8 +2,9 @@
 const app = new Vue({
     el: '#app',
     data: {
+        cartItems: [],
         userSearch: '',
-        quantityGoodsBasket: 0
+        
     },
     methods: {
         getJson(url){
@@ -56,5 +57,5 @@ const app = new Vue({
     mounted() {
         console.log(this);
     }
-});$mount('#app')
+})
 

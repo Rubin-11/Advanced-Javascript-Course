@@ -1,14 +1,18 @@
-Vue.component('topproduct__price', {
+Vue.component('products', {
     data(){
         return {
+            catalogUrl: '',
             products: [],
             filtered: [],
+            filterCatalog: [],
+            imgCatalog: 'https://place-hold.it/200x150',
         }
     },
     methods: {
         filter(value){
             let regexp = new RegExp(value, 'i');
-            this.filtered = this.products.filter(el => regexp.test(el.product_name));
+            // this.filtered = this.products.filter(el => regexp.test(el.product_name));
+            this.filterCatalog = this.products.filter(el => regexp.test(el.product_name));
         }
     },
     mounted(){
@@ -16,15 +20,16 @@ Vue.component('topproduct__price', {
             .then(data => {
                 for(let el of data){
                     this.products.push(el);
-                    if(this.filtered.length < 6) {
-                        this.filtered.push(el);
-                    }
+                    this.filterCatalog.push(el);
+                    // if(this.filtered.length < 6) {
+                    //     this.filtered.push(el);
+                    // }
                 }
             });
     },
     template: `
         <div class="topproduct__price">
-            <product ref="refref" v-for="item of filtered" :key="item.id_product" :product="item"></product>
+            <product ref="refref" v-for="item of filterCatalog" :key="item.id_product" :img="imgCatalog" :product="item"></product>
         </div>
     `
 });

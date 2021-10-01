@@ -1416,6 +1416,11 @@ ul {
   line-height: 29px;
 }
 
+.cart {
+  margin-top: 96px;
+  margin-bottom: 128px;
+}
+
 .cart__products {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1489,12 +1494,11 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   left: 146px;
-  bottom: 62px;
+  bottom: 91px;
 }
 
 .cart__products__orders__price__box__p__quantity__input {
   width: 44px;
-  height: 24px;
   border: 1px solid #eaeaea;
   text-align: center;
 }

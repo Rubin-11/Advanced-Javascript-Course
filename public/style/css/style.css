@@ -66,11 +66,11 @@ img {
     border: 1px solid #c0c0c040;
     padding: 15px
 }
-.cart{
+.carrt{
     display: flex;
     position: relative;
 }
-.cart :hover .cart-block {
+.carrt :hover .cart-block {
     display: block;
 }
 .cart-block{
