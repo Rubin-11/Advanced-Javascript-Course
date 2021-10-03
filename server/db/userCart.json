@@ -1,5 +1,20 @@
 {
-    "amount": 0,
-    "countGoods": 0,
-    "contents": []
+    "amount": 8400,
+    "countGoods": 3,
+    "contents": [
+        {
+            "quantity": 1,
+            "id_product": 3,
+            "img": "img/topProduct/best__product-3.png",
+            "product_name": "Летняя толстовка",
+            "price": 400
+        },
+        {
+            "quantity": 2,
+            "id_product": 2,
+            "img": "img/topProduct/best__product-2.png",
+            "product_name": "Вечерний костюм",
+            "price": 4000
+        }
+    ]
 }

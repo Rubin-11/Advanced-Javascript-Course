@@ -1,4 +1,4 @@
-Vue.component('topproduct__price', {
+Vue.component('topproduct__index', {
     data(){
         return {
             products: [],
@@ -29,7 +29,7 @@ Vue.component('topproduct__price', {
     `
 });
 Vue.component('product', {
-    props: ['product', 'img'],
+    props: ['product'],
 
     template: `
     <div class="topproduct__price__block">

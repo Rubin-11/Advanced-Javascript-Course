@@ -1,10 +1,8 @@
 Vue.component('cart-product', {
-    props: ['cartItem','quantityGoodsBasket'],
+    props: ['cartItem'],
     data(){
         return {
-            cartUrl: '/getBasket.json',
             cartItems: [],
-            showCart: false,
             sumPrise: 0
         }
     },
@@ -81,7 +79,7 @@ Vue.component('cart-product', {
                         <input class="cart__placing-an-order__form__box1__text-quote" type="text" placeholder="GET A QUOTE">
                     </div>
                     <div class="cart__placing-an-order__box2">
-                        <p class="cart__placing-an-order__box2__p-small">SUB TOTAL <samp class="cart__placing-an-order__box2__p-small-spam">$900</samp></p>
+                        <p class="cart__placing-an-order__box2__p-small">SUB TOTAL <samp class="cart__placing-an-order__box2__p-small-spam">{{sumPrise}}$</samp></p>
                         <p class="cart__placing-an-order__box2__p-big">GRAND TOTAL <samp class="cart__placing-an-order__box2__p-big-spam">{{sumPrise}}$</samp></p>
                         <div class="cart__placing-an-order__box2__line"></div>
                         <button class="cart__placing-an-order__box2__button">PROCEED TO CHECKOUT</button>
@@ -93,7 +91,7 @@ Vue.component('cart-product', {
 });
 
 Vue.component('carrt-item', {
-    props: ['cartItem', 'img'],
+    props: ['cartItem'],
     template: `
         <div class="cart__products__orders__price">
             <img class="cart__products__orders__price__img" :src="cartItem.img" alt="product-1">
@@ -119,22 +117,4 @@ Vue.component('carrt-item', {
             </div>
         </div>
         `
-
 });
-
-//         <div class="cart-item">
-//         <div class="product-bio">
-//             <img :src="cartItem.img" width="90px" alt="Some image">
-//             <div class="product-desc">
-//                 <p class="product-title">{{cartItem.product_name}}</p>
-//                 <p class="product-quantity">Количество: {{cartItem.quantity}}</p>
-//                 <p class="product-single-price">{{cartItem.price}}₽ за единицу</p>
-//             </div>
-//         </div>
-//         <div class="right-block">
-//             <p class="product-price">{{cartItem.quantity*cartItem.price}}₽</p>
-//             <button class="del-btn" @click="$emit('remove', cartItem)">&times;</button>
-//         </div>
-//     </div>
-//     `
-// });

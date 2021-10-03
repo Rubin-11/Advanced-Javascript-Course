@@ -2,9 +2,9 @@
 const app = new Vue({
     el: '#app',
     data: {
-        cartItems: [],
+        // cartItems: [],
         userSearch: '',
-        
+        open: false,
     },
     methods: {
         getJson(url){
@@ -52,6 +52,12 @@ const app = new Vue({
             .catch(error => {
                 this.$refs.error.setError(error);
             });
+        },
+        closeClick: function(event) {
+            if(event) {
+                this.open = true;
+                this.open = null;
+            }
         },
     },
     mounted() {

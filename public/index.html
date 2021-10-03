@@ -33,7 +33,7 @@
             <nav class="header__right">
                 <ul>
                     <li class="header__right__menu">
-                        <details class="header__right__details-main">
+                        <details v-bind:open = "open"  class="header__right__details-main">
                             <summary class="header__right__details-main__summary-icon">
                                 <svg class="header__right__svg" width="32" height="23" viewBox="0 0 32 23" fill="none"
                                 xmlns="http://www.w3.org/2000/svg"> <path class="header__right__svg-new" d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"></path>
@@ -59,7 +59,7 @@
                                     </ul>
                                 </div>
                                 <h3>MENU</h3>
-                                <input class="header__right__details-main__summary-menu__close" type="image" name="image" src="img/header/Vector.svg" alt="button close">
+                                <input @click.stop="closeClick" class="header__right__details-main__summary-menu__close" type="image" name="image" src="img/header/Vector.svg" alt="button close">
                                 <details class="header__right__details-main__summary-menu__new" open="">
                                     <summary class="header__right__details-main__summary-menu__new__main"><span>MAN</span>
                                     </summary>
@@ -171,7 +171,7 @@
                     <h3 class="topProduct__text__h3">Fetured Items</h3>
                     <p class="topProduct__text__p">Shop for items based on what we featured in this week</p>
                 </div>
-                <topproduct__price ref="topproduct__price"></topproduct__price>
+                <topproduct__index ref="topproduct__price"></topproduct__index>
                 <form class="topproduct__button" action="catalog.html">
                     <button class="topproduct__button__bt">Browse All Product</button>
                 </form>
@@ -283,10 +283,11 @@
                 </div>
             </section>
         </footer>
+        
     </div>
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
     <script src="js/CartComp.js"></script>
-    <script src="js/ProducComp.js"></script>
+    <script src="js/ProductIndex.js"></script>
     <script src="js/FilterComp.js"></script>
     <script src="js/ErrorComp.js"></script>
     <script src="js/main.js"></script>
