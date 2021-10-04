@@ -1,8 +1,6 @@
 Vue.component('cart', {
     data(){
         return {
-            imgCart: 'https://place-hold.it/50x100',
-            cartUrl: '/getBasket.json',
             cartItems: [],
             showCart: false,
             sum: 0,
@@ -70,7 +68,6 @@ Vue.component('cart', {
                 v-for="item of cartItems" 
                 :key="item.id_product"
                 :cart-item="item" 
-                :img="imgCart"
                 @remove="remove">
                 </cart-item>
             </div>

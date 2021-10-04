@@ -2,7 +2,6 @@
 const app = new Vue({
     el: '#app',
     data: {
-        // cartItems: [],
         userSearch: '',
         open: false,
     },
