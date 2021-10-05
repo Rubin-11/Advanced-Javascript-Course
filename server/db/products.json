@@ -1,0 +1,56 @@
+[
+  {
+    "id_product": 1,
+    "img": "img/topProduct/best__product-1.png",
+    "product_name": "Куртка",
+    "price": 1600
+  },
+  {
+    "id_product": 2,
+    "img": "img/topProduct/best__product-2.png",
+    "product_name": "Вечерний костюм",
+    "price": 4000
+  },
+  {
+    "id_product": 3,
+    "img": "img/topProduct/best__product-3.png",
+    "product_name": "Летняя толстовка",
+    "price": 400
+  },
+  {
+    "id_product": 4,
+    "img": "img/topProduct/best__product-4.png",
+    "product_name": "Футболка и брюки",
+    "price": 1000
+  },
+  {
+    "id_product": 5,
+    "img": "img/topProduct/best__product-5.png",
+    "product_name": "Деловой костюм",
+    "price": 3000
+  },
+  {
+    "id_product": 6,
+    "img": "img/topProduct/best__product-6.png",
+    "product_name": "Полосатая рубашка",
+    "price": 500
+  },
+  {
+    "id_product": 7,
+    "img": "img/topProduct/best__product-10.png",
+    "product_name": "Белая рубашка",
+    "price": 500
+  },
+  {
+    "id_product": 8,
+    "img": "img/topProduct/best__product-11.png",
+    "product_name": "Кожаная куртка",
+    "price": 5000
+  },
+  {
+    "id_product": 9,
+    "img": "img/topProduct/best__product-12.png",
+    "product_name": "Пляжный вариант",
+    "price": 200
+  }
+]
